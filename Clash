@@ -20,7 +20,7 @@ custom_proxy_group=国外影视`select`[]节点选择`[]自动选择`[]手动切
 # > 详细策略
 custom_proxy_group=Apple`select`[]DIRECT`[]节点选择`[]自动选择`[]手动切换
 custom_proxy_group=Microsoft`select`[]DIRECT`[]节点选择`[]自动选择`[]手动切换
-custom_proxy_group=Google`select`[]DIRECT`[]节点选择`[]自动选择`[]手动切换
+custom_proxy_group=Google`select`[]DIRECT`[]节点选择`[]自动选择`[]手动切换`[]香港HK`[]台湾TW`[]新加坡SG
 custom_proxy_group=GoogleFCM`select`[]DIRECT`[]节点选择`[]自动选择`[]手动切换
 custom_proxy_group=Telegram`select`[]节点选择`[]自动选择`[]手动切换
 custom_proxy_group=Disney`select`[]节点选择`[]自动选择`[]手动切换`[]香港HK`[]台湾TW`[]新加坡SG
