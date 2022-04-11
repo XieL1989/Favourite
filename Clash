@@ -1,6 +1,5 @@
 [custom]
 #ACL4SSR规则
-
 # > 设置分组标志位
 enable_rule_generator=true
 overwrite_original_rules=true
@@ -46,7 +45,11 @@ custom_proxy_group=Netflix节点`url-test`(NF|飞|解锁|Netflix|NETFLIX|Media|�
 
 
 #[filter_remote]
-# >规则策略
+# > 广告拦截
+ruleset=广告拦截,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
+ruleset=应用净化,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
+
+# > 优先规则
 ruleset=国内直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
 ruleset=国内直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
 ruleset=国内直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
@@ -56,12 +59,6 @@ ruleset=国内直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Cl
 ruleset=国内直连,[]GEOIP,CN
 ;ruleset=国内直连,[]GEOIP,LAN
 ;ruleset=国内直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaIp.list
-ruleset=节点选择,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
-ruleset=漏网之鱼,[]FINAL
-
-# > 广告拦截
-ruleset=广告拦截,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
-ruleset=应用净化,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
 
 # > 服务分流
 ruleset=Apple,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list
@@ -83,7 +80,11 @@ ruleset=Spotify,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/R
 ruleset=Bilibili,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/BilibiliHMT.list
 ruleset=Bilibili,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bilibili.list
 ruleset=国外影视,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
-ruleset=国内视频,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.lis
+ruleset=国内视频,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list
 
+# > 最后策略
+ruleset=节点选择,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
+ruleset=漏网之鱼,[]FINAL
 
+#[subscribe]
 # > 订阅地址：https://raw.githubusercontent.com/XieL1989/Favourite/main/Clash
