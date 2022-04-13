@@ -86,5 +86,9 @@ ruleset=国内视频,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Cl
 ruleset=节点选择,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
 ruleset=漏网之鱼,[]FINAL
 
+
+
 #[subscribe]
 # > 订阅地址：https://raw.githubusercontent.com/XieL1989/Favourite/main/Clash
+# > 订阅转换：&config=https%3A%2F%2Fraw.githubusercontent.com%2FXieL1989%2FFavourite%2Fmain%2FClash&filename=节点名称&emoji=false&list=false&tfo=false&scv=false&fdn=true&sort=false&udp=true
+
