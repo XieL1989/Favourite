@@ -20,9 +20,9 @@ custom_proxy_group=Microsoft`select`[]DIRECT`[]节点选择`[]自动选择`[]手
 custom_proxy_group=Google`select`[]DIRECT`[]节点选择`[]自动选择`[]手动切换`[]香港HK`[]台湾TW`[]新加坡SG
 custom_proxy_group=GoogleFCM`select`[]DIRECT`[]节点选择`[]自动选择`[]手动切换
 custom_proxy_group=Telegram`select`[]节点选择`[]自动选择`[]手动切换
-custom_proxy_group=Disney`select`[]节点选择`[]自动选择`[]手动切换`[]香港HK`[]台湾TW`[]新加坡SG`[]Disney节点`[]Netflix节点
+custom_proxy_group=Disney`select`[]节点选择`[]自动选择`[]手动切换`[]香港HK`[]台湾TW`[]新加坡SG`[]Disney自动节点`[]Disney自选节点
 custom_proxy_group=YouTube`select`[]节点选择`[]自动选择`[]手动切换`[]香港HK`[]台湾TW`[]新加坡SG
-custom_proxy_group=Netflix`select`[]节点选择`[]自动选择`[]手动切换`[]香港HK`[]台湾TW`[]新加坡SG`[]Disney节点`[]Netflix节点
+custom_proxy_group=Netflix`select`[]节点选择`[]自动选择`[]手动切换`[]香港HK`[]台湾TW`[]新加坡SG`[]Netflix自动节点`[]Netflix自选节点
 custom_proxy_group=Spotify`select`[]DIRECT`[]节点选择`[]自动选择`[]手动切换`[]香港HK`[]台湾TW`[]新加坡SG`[]菲律宾PH
 custom_proxy_group=Bilibili`select`[]DIRECT`[]香港HK`[]台湾TW
 custom_proxy_group=国内视频`select`[]DIRECT`[]节点选择`[]自动选择`[]手动切换
@@ -40,14 +40,18 @@ custom_proxy_group=日本JP`url-test`(日|JP|Japan|Tokyo)`http://www.gstatic.com
 custom_proxy_group=韩国KR`url-test`(韩|KR|Korea|Incheon)`http://www.gstatic.com/generate_204`300,,50
 custom_proxy_group=新加坡SG`url-test`(新|狮|SG|Singapore)`http://www.gstatic.com/generate_204`300,,50
 custom_proxy_group=菲律宾PH`url-test`(菲|PH|Philippines)`http://www.gstatic.com/generate_204`300,,50
-custom_proxy_group=Disney节点`url-test`(香港|HK|解锁|Disney|Media)`http://www.gstatic.com/generate_204`300,,50
-custom_proxy_group=Netflix节点`url-test`(NF|飞|解锁|Netflix|NETFLIX|Media|ℕF)`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=Disney自动节点`url-test`(香港|HK|解锁|Disney|Media)`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=Disney自选节点`select`(香港|HK|Disney|Media)`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=Netflix自动节点`url-test`(NF|飞|解锁|Netflix|NETFLIX|Media|ℕF)`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=Netflix自选节点`select`(NF|飞|解锁|Netflix|NETFLIX|Media|ℕF)`http://www.gstatic.com/generate_204`300,,50
 
 
 #[filter_remote]
 # > 广告拦截
 ruleset=广告拦截,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
 ruleset=应用净化,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
+ruleset=广告拦截,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyList.list
+ruleset=广告拦截,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyListChina.list
 
 # > 优先规则
 ruleset=国内直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
@@ -76,6 +80,7 @@ ruleset=国内直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Cl
 ruleset=Disney,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/DisneyPlus.list
 ruleset=YouTube,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list
 ruleset=Netflix,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Netflix.list
+ruleset=Netflix,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AmazonIp.list
 ruleset=Spotify,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Spotify.list
 ruleset=Bilibili,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/BilibiliHMT.list
 ruleset=Bilibili,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bilibili.list
@@ -87,8 +92,6 @@ ruleset=节点选择,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Cl
 ruleset=漏网之鱼,[]FINAL
 
 
-
 #[subscribe]
 # > 订阅地址：https://raw.githubusercontent.com/XieL1989/Favourite/main/Clash
 # > 订阅转换：&config=https%3A%2F%2Fraw.githubusercontent.com%2FXieL1989%2FFavourite%2Fmain%2FClash&filename=节点名称&emoji=false&list=false&tfo=false&scv=false&fdn=true&sort=false&udp=true
-
