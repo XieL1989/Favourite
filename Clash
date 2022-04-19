@@ -43,8 +43,9 @@ custom_proxy_group=新加坡SG`url-test`(新|狮|SG|Singapore)`http://www.gstati
 custom_proxy_group=菲律宾PH`url-test`(菲|PH|Philippines)`http://www.gstatic.com/generate_204`300,,50
 custom_proxy_group=Disney自动节点`url-test`(香港|HK|Disney|Media)`http://www.gstatic.com/generate_204`300,,50
 custom_proxy_group=Disney自选节点`select`(香港|HK|Disney|Media)
-custom_proxy_group=Netflix自动节点`url-test`(^((NF|飞|解锁|Netflix|NETFLIX|Media|ℕF).*(港|HK|Hong)).*$)`http://www.gstatic.com/generate_204`300,,50
-custom_proxy_group=Netflix自选节点`select`(^((NF|飞|解锁|Netflix|NETFLIX|Media|ℕF).*(港|HK|Hong)).*$)
+custom_proxy_group=Netflix自动节点`url-test`((?!.*(港|HK|Hong)).*(NF|飞|解锁|Netflix|NETFLIX|Media|ℕF))`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=Netflix自选节点`select`((?!.*(港|HK|Hong)).*(NF|飞|解锁|Netflix|NETFLIX|Media|ℕF))
+
 
 #[filter_remote]
 # > 广告拦截
