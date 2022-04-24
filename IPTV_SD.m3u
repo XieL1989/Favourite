@@ -81,7 +81,6 @@ http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000032/index.m3u8
 http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000029/index.m3u8
 
 
-
 #EXTINF:-1 group-title="省内" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/sd_qilu.png",山东齐鲁
 http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000313/index.m3u8
 #EXTINF:-1 group-title="省内" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/sd_gonggong.png",山东公共
@@ -94,6 +93,14 @@ http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000336/index.m3u8
 http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000338/index.m3u8
 #EXTINF:-1 group-title="省内" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/sd_shaoer.png",山东少儿
 http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000340/index.m3u8
+
+
+#EXTINF:-1 group-title="地方",枣庄综合
+http://stream.zzgd.tv/1/playlist.m3u8
+#EXTINF:-1 group-title="地方",枣庄公共
+http://stream.zzgd.tv/3/playlist.m3u8
+#EXTINF:-1 group-title="地方",枣庄教育
+http://stream.zzgd.tv/2/sd/live.m3u8
 
 
 #[subscribe]
