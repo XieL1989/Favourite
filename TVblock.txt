@@ -28,6 +28,7 @@
 127.0.0.1 api.cupid.ptqy.gitv.tv
 127.0.0.1 api.cupid.qiyi.com
 127.0.0.1 api.yuedu.iqiyi.com
+127.0.0.1 auth.api.gitv.tv
 127.0.0.1 c.uaa.iqiyi.com
 127.0.0.1 cloudpush.iqiyi.com
 127.0.0.1 cm.passport.iqiyi.com
@@ -38,7 +39,6 @@
 127.0.0.1 hotchat-im.iqiyi.com
 127.0.0.1 ifacelog.iqiyi.com
 127.0.0.1 mbdlog.iqiyi.com
-127.0.0.1 msg.c002.ottcn.com
 127.0.0.1 msg.iqiyi.com
 127.0.0.1 msg.video.ptqy.gitv.tv
 127.0.0.1 msg.video.qiyi.com
@@ -51,16 +51,14 @@
 127.0.0.1 nl.rcd.ptqy.gitv.tv
 127.0.0.1 notice.iqiyi.com
 127.0.0.1 noxagile.duapp.com
+127.0.0.1 paopao*.qiyipic.com
 127.0.0.1 paopao.iqiyi.com
-127.0.0.1 paopao0.qiyipic.com
-127.0.0.1 paopao1.qiyipic.com
-127.0.0.1 paopao2.qiyipic.com
-127.0.0.1 paopao3.qiyipic.com
 127.0.0.1 policy.video.iqiyi.com
 127.0.0.1 qosp.msg.71.am
 127.0.0.1 static.g.iqiyi.com
 127.0.0.1 static.g.ppstream.com
 127.0.0.1 t7z.cupid.iqiyi.com
+127.0.0.1 t7z.cupid.ptqy.gitv.tv
 127.0.0.1 tracker.sns.iqiyi.com
 
 
@@ -161,6 +159,7 @@
 127.0.0.1 mitv.tracking.miui.com
 127.0.0.1 new.api.ad.xiaomi.com
 127.0.0.1 o2o.api.xiaomi.com
+127.0.0.1 ota.cdn.pandora.xiaomi.com
 127.0.0.1 package.box.xiaomi.com
 127.0.0.1 package.cdn.pandora.xiaomi.com
 127.0.0.1 pandora.mi.com
