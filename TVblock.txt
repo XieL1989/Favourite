@@ -151,7 +151,6 @@
 127.0.0.1 de.pandora.xiaomi.com
 127.0.0.1 dvb.pandora.xiaomi.com
 127.0.0.1 gallery.pandora.xiaomi.com
-127.0.0.1 gallery.pandora.xiaomi.com
 127.0.0.1 jellyfish.pandora.xiaomi.com
 127.0.0.1 log.ad.xiaomi.com
 127.0.0.1 misc.pandora.xiaomi.com
