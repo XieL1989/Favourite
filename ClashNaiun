@@ -14,15 +14,16 @@ custom_proxy_group=手动切换`select`.*
 custom_proxy_group=负载均衡`load-balance`.*`http://www.gstatic.com/generate_204`300,,50
 custom_proxy_group=故障转移`fallback`.*`http://www.gstatic.com/generate_204`300,,50
 custom_proxy_group=高速专线`url-test`(IPLC)`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=视频解锁`url-test`(原生解锁)`http://www.gstatic.com/generate_204`300,,50
 
 # > 详细策略
-custom_proxy_group=Disney`select`[]手动切换`[]高速专线`[]香港HK`[]台湾TW`[]新加坡SG
-custom_proxy_group=YouTube`select`[]手动切换`[]高速专线`[]香港HK`[]台湾TW`[]新加坡SG
-custom_proxy_group=Netflix`select`[]手动切换`[]高速专线`[]香港HK`[]台湾TW`[]新加坡SG
+custom_proxy_group=Disney`select`[]手动切换`[]高速专线`[]视频解锁`[]香港HK`[]台湾TW`[]新加坡SG
+custom_proxy_group=YouTube`select`[]手动切换`[]高速专线`[]视频解锁`[]香港HK`[]台湾TW`[]新加坡SG
+custom_proxy_group=Netflix`select`[]手动切换`[]高速专线`[]视频解锁`[]香港HK`[]台湾TW`[]新加坡SG
 custom_proxy_group=Spotify`select`[]国内直连`[]手动切换`[]高速专线`[]香港HK`[]台湾TW`[]新加坡SG
 custom_proxy_group=Bilibili`select`[]国内直连`[]香港HK`[]台湾TW
 custom_proxy_group=国内视频`select`[]国内直连`[]节点选择`[]自动选择`[]手动切换
-custom_proxy_group=国外影视`select`[]手动切换`[]高速专线`[]香港HK`[]台湾TW`[]新加坡SG
+custom_proxy_group=国外影视`select`[]手动切换`[]高速专线`[]视频解锁`[]香港HK`[]台湾TW`[]新加坡SG
 custom_proxy_group=Apple`select`[]国内直连`[]节点选择`[]自动选择`[]手动切换
 custom_proxy_group=Microsoft`select`[]国内直连`[]节点选择`[]自动选择`[]手动切换
 custom_proxy_group=GoogleFCM`select`[]国内直连`[]节点选择`[]自动选择`[]手动切换
