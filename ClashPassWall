@@ -1,0 +1,95 @@
+[custom]
+#ACL4SSR规则
+# > 设置分组标志位
+enable_rule_generator=true
+overwrite_original_rules=true
+
+
+#[policy]
+# > 分流策略
+custom_proxy_group=国内直连`select`[]DIRECT
+custom_proxy_group=节点选择`select`[]负载均衡`[]故障转移`[]香港HK`[]新加坡SG`[]美国US`[]日本JP`[]韩国KR
+custom_proxy_group=自动选择`url-test`.*`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=手动切换`select`.*
+custom_proxy_group=负载均衡`load-balance`.*`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=故障转移`fallback`.*`http://www.gstatic.com/generate_204`300,,50
+
+# > 详细策略
+custom_proxy_group=Disney`select`[]手动切换`[]香港HK`[]新加坡SG
+custom_proxy_group=YouTube`select`[]手动切换`[]香港HK`[]新加坡SG
+custom_proxy_group=Netflix`select`[]手动切换`[]香港HK`[]新加坡SG
+custom_proxy_group=Spotify`select`[]国内直连`[]手动切换`[]香港HK
+custom_proxy_group=Bilibili`select`[]国内直连`[]香港HK
+custom_proxy_group=国内视频`select`[]国内直连`[]节点选择`[]自动选择`[]手动切换
+custom_proxy_group=国外影视`select`[]手动切换`[]香港HK`[]新加坡SG
+custom_proxy_group=Apple`select`[]国内直连`[]节点选择`[]自动选择`[]手动切换
+custom_proxy_group=Microsoft`select`[]国内直连`[]节点选择`[]自动选择`[]手动切换
+custom_proxy_group=GoogleFCM`select`[]国内直连`[]节点选择`[]自动选择`[]手动切换
+custom_proxy_group=Google`select`[]自动选择`[]手动切换`[]香港HK`[]美国US
+custom_proxy_group=Telegram`select`[]自动选择`[]手动切换`[]香港HK`[]新加坡SG
+custom_proxy_group=PayPal`select`[]国内直连`[]香港HK`[]美国US
+custom_proxy_group=Github`select`[]国内直连`[]自动选择`[]香港HK`[]美国US
+custom_proxy_group=游戏平台`select`[]国内直连`[]节点选择`[]自动选择`[]手动切换
+custom_proxy_group=广告拦截`select`[]REJECT`[]国内直连
+custom_proxy_group=应用净化`select`[]REJECT`[]国内直连
+custom_proxy_group=漏网之鱼`select`[]国内直连`[]节点选择`[]自动选择`[]手动切换
+
+# > 分区策略
+custom_proxy_group=香港HK`url-test`(港|HK|Hong)`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=美国US`url-test`(美|US|States|American|California)`http://www.gstatic.com/generate_204`300,,150
+custom_proxy_group=日本JP`url-test`(日|JP|Japan|Tokyo)`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=韩国KR`url-test`(韩|KR|Korea|Incheon)`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=新加坡SG`url-test`(新|狮|SG|Singapore)`http://www.gstatic.com/generate_204`300,,50
+
+
+#[filter_remote]
+# > 广告拦截
+ruleset=广告拦截,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
+ruleset=广告拦截,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyList.list
+ruleset=广告拦截,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyListChina.list
+ruleset=应用净化,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
+
+# > 优先规则
+ruleset=国内直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
+ruleset=国内直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
+ruleset=国内直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
+ruleset=国内直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaIp.list
+ruleset=国内直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
+ruleset=国内直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
+ruleset=国内直连,[]GEOIP,CN
+;ruleset=国内直连,[]GEOIP,LAN
+
+# > 媒体分流
+ruleset=Disney,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/DisneyPlus.list
+ruleset=YouTube,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list
+ruleset=Netflix,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Netflix.list
+ruleset=Netflix,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/NetflixIP.list
+ruleset=Spotify,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Spotify.list
+ruleset=Bilibili,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/BilibiliHMT.list
+ruleset=Bilibili,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bilibili.list
+ruleset=国外影视,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
+ruleset=国内视频,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list
+
+# > 服务分流
+ruleset=Apple,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list
+ruleset=Microsoft,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list
+ruleset=GoogleFCM,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list
+ruleset=Google,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Google.list
+ruleset=国内直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
+ruleset=Telegram,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
+ruleset=PayPal,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/PayPal/PayPal.yaml
+ruleset=Github,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Github.list
+ruleset=游戏平台,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Epic.list
+ruleset=游戏平台,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Sony.list
+ruleset=游戏平台,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Steam.list
+ruleset=国内直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list
+
+# > 最后策略
+ruleset=节点选择,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
+ruleset=节点选择,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AmazonIp.list
+ruleset=漏网之鱼,[]FINAL
+
+
+#[subscribe]
+# > 订阅地址：https://raw.githubusercontent.com/XieL1989/Favourite/main/ClashPassWall
+# > 订阅转换：&config=https%3A%2F%2Fraw.githubusercontent.com%2FXieL1989%2FFavourite%2Fmain%2FClash&filename=PassWall&fdn=true&udp=true&emoji=false&exclude=%E5%AE%98%E6%96%B9%7C%E5%AE%98%E7%BD%91%7C%E4%B8%8B%E8%BD%BD%7C%E5%88%B0%E6%9C%9F%7C%E5%89%A9%E4%BD%99
