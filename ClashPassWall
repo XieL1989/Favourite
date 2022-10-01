@@ -24,7 +24,6 @@ custom_proxy_group=国内视频`select`[]国内直连`[]节点选择`[]自动选
 custom_proxy_group=国外影视`select`[]手动切换`[]香港HK`[]新加坡SG
 custom_proxy_group=Apple`select`[]国内直连`[]节点选择`[]自动选择`[]手动切换
 custom_proxy_group=Microsoft`select`[]国内直连`[]节点选择`[]自动选择`[]手动切换
-custom_proxy_group=GoogleFCM`select`[]国内直连`[]节点选择`[]自动选择`[]手动切换
 custom_proxy_group=Google`select`[]自动选择`[]手动切换`[]香港HK`[]美国US
 custom_proxy_group=Telegram`select`[]自动选择`[]手动切换`[]香港HK`[]新加坡SG
 custom_proxy_group=PayPal`select`[]国内直连`[]香港HK`[]美国US
@@ -74,7 +73,7 @@ ruleset=国内视频,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Cl
 # > 服务分流
 ruleset=Apple,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list
 ruleset=Microsoft,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list
-ruleset=GoogleFCM,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list
+ruleset=Google,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list
 ruleset=Google,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Google.list
 ruleset=国内直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
 ruleset=Telegram,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
