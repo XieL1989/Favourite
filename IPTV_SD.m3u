@@ -92,11 +92,13 @@ http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000340/index.m3u8
 
 
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="地方",枣庄新闻
-http://stream.zzgd.tv/1/playlist.m3u8
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00001025/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="地方",枣庄公共
-http://stream.zzgd.tv/3/playlist.m3u8
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00001027/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="地方",枣庄教育
-http://stream.zzgd.tv/2/sd/live.m3u8
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00001026/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="地方",滕州综合
+http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00001028/index.m3u8
 
 
 #[subscribe]
