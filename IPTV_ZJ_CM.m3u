@@ -27,10 +27,16 @@ http://hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221232645/00.smil/inde
 http://hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221228342/00.smil/index.m3u8
 #EXTINF:-1 tvg-id="11" tvg-name="CCTV10" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV10.png" group-title="央视",CCTV科教
 http://hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221228327/00.smil/index.m3u8
+#EXTINF:-1 tvg-id="12" tvg-name="CCTV11" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV11.png" group-title="央视",CCTV戏曲
+http://hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221228297/00.smil/index.m3u8
 #EXTINF:-1 tvg-id="13" tvg-name="CCTV12" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV12.png" group-title="央视",CCTV法制
 http://hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221228312/00.smil/index.m3u8
 #EXTINF:-1 tvg-id="15" tvg-name="CCTV14" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV14.png" group-title="央视",CCTV少儿
 http://hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221228335/00.smil/index.m3u8
+#EXTINF:-1 tvg-id="16" tvg-name="CCTV15" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV15.png" group-title="央视",CCTV音乐
+http://hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221228281/00.smil/index.m3u8
+#EXTINF:-1 tvg-id="18" tvg-name="CCTV17" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV17.png" group-title="央视",CCTV农业
+http://hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221229765/00.smil/index.m3u8
 
 
 #EXTINF:-1 tvg-id="27" tvg-name="湖南卫视" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/hunan.png" group-title="卫视",湖南卫视
