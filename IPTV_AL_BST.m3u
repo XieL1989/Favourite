@@ -97,7 +97,7 @@ http://aliyun-upcloud-live.bestvcdn.com.cn/live/program/live/wxtyhd8m/8000000/mn
 http://aliyun-upcloud-live.bestvcdn.com.cn/live/program/live/jspdhd/4000000/mnf.m3u8
 #EXTINF:-1 tvg-id="1989" tvg-name="上海都市" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/shanghaidushi.jpg" group-title="地方",都市频道
 http://aliyun-upcloud-live.bestvcdn.com.cn/live/program/live/dshd8m/8000000/mnf.m3u8
-#EXTINF:-1 tvg-id="1990" tvg-name="上视外语" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/shanghaidushi.jpg" group-title="地方",外语频道
+#EXTINF:-1 tvg-id="1990" tvg-name="上视外语" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/shanghaiwaiyu.png" group-title="地方",外语频道
 http://aliyun-upcloud-live.bestvcdn.com.cn/live/program/live/icshd8m/8000000/mnf.m3u8
 
 
