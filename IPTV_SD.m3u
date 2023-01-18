@@ -111,11 +111,11 @@ http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000313/index.m3u8
 http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000315/index.m3u8
 #EXTINF:-1 tvg-id="1429" tvg-name="山东农科" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/sd_nongke.png" group-title="省内",山东农科HD
 http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000339/index.m3u8
-#EXTINF:-1 tvg-id="1430" tvg-name="山东公共" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/sd_gonggong.png" group-title="省内",山东公共HD
+#EXTINF:-1 tvg-id="1430" tvg-name="山东新闻" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/sd_gonggong.png" group-title="省内",山东新闻HD
 http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000314/index.m3u8
 #EXTINF:-1 tvg-id="1431" tvg-name="山东少儿" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/sd_shaoer.png" group-title="省内",山东少儿HD
 http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000340/index.m3u8
-#EXTINF:-1 tvg-id="1432" tvg-name="山东影视" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/sd_yingshi.png" group-title="省内",山东影视HD
+#EXTINF:-1 tvg-id="1432" tvg-name="山东文旅" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/sd_yingshi.png" group-title="省内",山东文旅HD
 http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000337/index.m3u8
 #EXTINF:-1 tvg-id="1433" tvg-name="山东综艺" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/sd_zongyi.png" group-title="省内",山东综艺HD
 http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000338/index.m3u8
@@ -127,9 +127,7 @@ http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00000331/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="枣庄新闻" tvg-logo="" group-title="地方",枣庄新闻
 http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00001025/index.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="枣庄公共" tvg-logo="" group-title="地方",枣庄公共
-http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00001027/index.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="枣庄教育" tvg-logo="" group-title="地方",枣庄教育
+#EXTINF:-1 tvg-id="" tvg-name="枣庄生活" tvg-logo="" group-title="地方",枣庄生活
 http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00001026/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="滕州综合" tvg-logo="" group-title="地方",滕州综合
 http://ucdn.sd.chinamobile.com:8089/00/SNM/CHANNEL00001028/index.m3u8
