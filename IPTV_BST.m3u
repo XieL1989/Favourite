@@ -91,6 +91,12 @@ http://tt-live.bestvcdn.com.cn/live/program/live/scwshd/8000000/mnf.m3u8
 http://tt-live.bestvcdn.com.cn/live/program/live/ynwshd8m/8000000/mnf.m3u8
 
 
+#EXTINF:-1 tvg-id="141" tvg-name="凤凰中文" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/fenghuangzhongwen.png" group-title="海外",凤凰中文
+http://play-live.ifeng.com/live/06OLEGEGM4G.m3u8
+#EXTINF:-1 tvg-id="142" tvg-name="凤凰资讯" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/fenghuangzixun.png" group-title="海外",凤凰资讯
+http://play-live.ifeng.com/live/06OLEEWQKN4.m3u8
+
+
 #EXTINF:-1 tvg-id="1984" tvg-name="上视新闻" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/shangshixinwen.png" group-title="地方",新闻综合
 http://tt-live.bestvcdn.com.cn/live/program/live/xwzhhd8m/8000000/mnf.m3u8
 #EXTINF:-1 tvg-id="1985" tvg-name="" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/diyicaijing.png" group-title="地方",第一财经
