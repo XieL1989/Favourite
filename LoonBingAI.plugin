@@ -5,15 +5,15 @@
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/80px/Bing.png
 
 [Rule]
-DOMAIN-SUFFIX, bing.com, PROXY
-DOMAIN-SUFFIX, bing.com.cn, PROXY
-DOMAIN-SUFFIX, bing.net, PROXY
-DOMAIN-SUFFIX, bingads.com, PROXY
-DOMAIN-SUFFIX, bingagencyawards.com, PROXY
-DOMAIN-SUFFIX, bingapistatistics.com, PROXY
-DOMAIN-SUFFIX, bingsandbox.com, PROXY
-DOMAIN-SUFFIX, bingvisualsearch.com, PROXY
-DOMAIN-SUFFIX, bingworld.com, PROXY
+DOMAIN-SUFFIX, bing.com, Bing
+DOMAIN-SUFFIX, bing.com.cn, Bing
+DOMAIN-SUFFIX, bing.net, Bing
+DOMAIN-SUFFIX, bingads.com, Bing
+DOMAIN-SUFFIX, bingagencyawards.com, Bing
+DOMAIN-SUFFIX, bingapistatistics.com, Bing
+DOMAIN-SUFFIX, bingsandbox.com, Bing
+DOMAIN-SUFFIX, bingvisualsearch.com, Bing
+DOMAIN-SUFFIX, bingworld.com, Bing
 
 [Script]
 http-request ^https:\/\/www\.bing\.com\/(search|new) script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Bing/BingAI.js, requires-body = false, tag = BingAI
@@ -21,5 +21,5 @@ http-request ^https:\/\/www\.bing\.com\/(search|new) script-path = https://gitla
 [MITM]
 hostname = www.bing.com
 
-#[subscribe]
-# > 订阅地址：https://raw.githubusercontent.com/XieL1989/Favourite/main/LoonBingAI.plugin
+#![subscribe]
+#!> 订阅地址：https://raw.githubusercontent.com/XieL1989/Favourite/main/LoonBingAI.plugin
