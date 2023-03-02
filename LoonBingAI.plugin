@@ -1,7 +1,5 @@
 #!name = Bing AI
 #!desc = 将Safari浏览器伪装为Edge浏览器，以便绕过BingAI的使用限制。
-#!openUrl = 
-#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/main/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/80px/Bing.png
 
 [Rule]
@@ -16,7 +14,7 @@ DOMAIN-SUFFIX, bingvisualsearch.com, Bing
 DOMAIN-SUFFIX, bingworld.com, Bing
 
 [Script]
-http-request ^https:\/\/www\.bing\.com\/(search|new) script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Bing/BingAI.js, requires-body = false, tag = BingAI
+http-request ^https:\/\/www\.bing\.com\/(search|new) script-path = https://raw.githubusercontent.com/XieL1989/Favourite/main/BingAI.js, requires-body = false, tag = BingAI
 
 [MITM]
 hostname = www.bing.com
