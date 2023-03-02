@@ -1,5 +1,5 @@
 /*
-脚本原创：
+脚本原创：https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Bing/BingAI.js
 */
    const headers = $request.headers;
 
