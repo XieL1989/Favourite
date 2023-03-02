@@ -14,10 +14,10 @@ DOMAIN-SUFFIX, bingvisualsearch.com, Bing
 DOMAIN-SUFFIX, bingworld.com, Bing
 
 [Script]
-http-request ^https:\/\/www\.bing\.com\/(search|new) script-path = https://raw.githubusercontent.com/XieL1989/Favourite/main/BingAI.js, requires-body = false, tag = BingAI
+http-request ^https:\/\/www\.bing\.com\/(search|new) script-path = https://raw.githubusercontent.com/XieL1989/Favourite/main/Scripts/BingAI.js, requires-body = false, tag = BingAI
 
 [MITM]
 hostname = www.bing.com
 
 #![subscribe]
-#!> 订阅地址：https://raw.githubusercontent.com/XieL1989/Favourite/main/LoonBingAI.plugin
+#!> 订阅地址：https://raw.githubusercontent.com/XieL1989/Favourite/main/Loon/BingAI.plugin
