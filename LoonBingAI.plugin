@@ -1,0 +1,25 @@
+#!name = Bing AI
+#!desc = 将Safari浏览器伪装为Edge浏览器，以便绕过BingAI的使用限制。
+#!openUrl = 
+#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/main/Tool/Loon/Plugin
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/80px/Bing.png
+
+[Rule]
+DOMAIN-SUFFIX, bing.com, PROXY
+DOMAIN-SUFFIX, bing.com.cn, PROXY
+DOMAIN-SUFFIX, bing.net, PROXY
+DOMAIN-SUFFIX, bingads.com, PROXY
+DOMAIN-SUFFIX, bingagencyawards.com, PROXY
+DOMAIN-SUFFIX, bingapistatistics.com, PROXY
+DOMAIN-SUFFIX, bingsandbox.com, PROXY
+DOMAIN-SUFFIX, bingvisualsearch.com, PROXY
+DOMAIN-SUFFIX, bingworld.com, PROXY
+
+[Script]
+http-request ^https:\/\/www\.bing\.com\/(search|new) script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Bing/BingAI.js, requires-body = false, tag = BingAI
+
+[MITM]
+hostname = www.bing.com
+
+#[subscribe]
+# > 订阅地址：https://raw.githubusercontent.com/XieL1989/Favourite/main/LoonBingAI.plugin
