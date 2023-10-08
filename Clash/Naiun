@@ -1,12 +1,12 @@
 [custom]
 #ACL4SSR规则
-# > 设置分组标志位
+#>设置分组标志位
 enable_rule_generator=true
 overwrite_original_rules=true
 
 
 #[policy]
-# > 分流策略
+#>分流策略
 custom_proxy_group=国内直连`select`[]DIRECT
 custom_proxy_group=节点选择`select`[]负载均衡`[]故障转移`[]香港HK`[]台湾TW`[]美国US`[]日本JP`[]韩国KR`[]英国UK`[]印度IN`[]越南VN`[]泰国TH`[]南非ZA`[]巴西BR`[]新加坡SG`[]阿根廷AR`[]土耳其TR`[]俄罗斯RU`[]菲律宾PH`[]加拿大CA`[]墨西哥MX`[]澳大利亚AU`[]马来西亚MY
 custom_proxy_group=自动选择`url-test`.*`http://captive.apple.com/generate_204`300,,50
@@ -16,7 +16,7 @@ custom_proxy_group=故障转移`fallback`.*`http://captive.apple.com/generate_20
 custom_proxy_group=高速专线`url-test`(IPLC)`http://captive.apple.com/generate_204`300,,50
 custom_proxy_group=视频解锁`url-test`(原生解锁)`http://captive.apple.com/generate_204`300,,50
 
-# > 详细策略
+#>详细策略
 custom_proxy_group=Disney`select`[]自动选择`[]手动切换`[]高速专线`[]视频解锁`[]香港HK`[]台湾TW`[]新加坡SG
 custom_proxy_group=YouTube`select`[]自动选择`[]手动切换`[]高速专线`[]视频解锁`[]香港HK`[]台湾TW`[]新加坡SG
 custom_proxy_group=Netflix`select`[]自动选择`[]手动切换`[]高速专线`[]视频解锁`[]香港HK`[]台湾TW`[]新加坡SG
@@ -38,7 +38,7 @@ custom_proxy_group=广告拦截`select`[]REJECT`[]国内直连
 custom_proxy_group=应用净化`select`[]REJECT`[]国内直连
 custom_proxy_group=漏网之鱼`select`[]国内直连`[]节点选择`[]自动选择`[]手动切换
 
-# > 分区策略
+#>分区策略
 custom_proxy_group=香港HK`url-test`((^(?!.*(IPLC))).*(港|HK|Hong))`http://captive.apple.com/generate_204`300,,50
 custom_proxy_group=台湾TW`url-test`((^(?!.*(IPLC))).*(台|TW|Tai))`http://captive.apple.com/generate_204`300,,50
 custom_proxy_group=美国US`url-test`((^(?!.*(IPLC))).*(美|US|States|American))`http://captive.apple.com/generate_204`300,,150
@@ -62,13 +62,13 @@ custom_proxy_group=马来西亚MY`url-test`((^(?!.*(IPLC))).*(马|MY|Malaysia))`
 
 
 #[filter_remote]
-# > 广告拦截
+#>广告拦截
 ruleset=广告拦截,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
 ruleset=广告拦截,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyList.list
 ruleset=广告拦截,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyListChina.list
 ruleset=应用净化,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
 
-# > 优先规则
+#>优先规则
 ruleset=国内直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
 ruleset=国内直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
 ruleset=国内直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
@@ -78,7 +78,7 @@ ruleset=国内直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Cl
 ruleset=国内直连,[]GEOIP,CN
 ;ruleset=国内直连,[]GEOIP,LAN
 
-# > 服务分流
+#>服务分流
 ruleset=Apple,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list
 ruleset=Bing,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Bing/Bing.list
 ruleset=Microsoft,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list
@@ -95,7 +95,7 @@ ruleset=游戏平台,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Cl
 ruleset=游戏平台,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Steam.list
 ruleset=国内直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list
 
-# > 媒体分流
+#>媒体分流
 ruleset=Disney,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/DisneyPlus.list
 ruleset=YouTube,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list
 ruleset=Netflix,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Netflix.list
@@ -106,12 +106,12 @@ ruleset=Bilibili,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/
 ruleset=国外影视,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
 ruleset=国内视频,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list
 
-# > 最后策略
+#>最后策略
 ruleset=节点选择,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
 ruleset=节点选择,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AmazonIp.list
 ruleset=漏网之鱼,[]FINAL
 
 
 #[subscribe]
-# > 订阅地址：https://raw.githubusercontent.com/XieL1989/Favourite/main/Clash/Naiun
-# > 订阅转换：&config=https%3A%2F%2Fraw.githubusercontent.com%2FXieL1989%2FFavourite%2Fmain%2FClash%2FNaiun&filename=Naiun&fdn=true&udp=true&emoji=false&exclude=%E5%AE%98%E6%96%B9%7C%E5%AE%98%E7%BD%91%7C%E4%B8%8B%E8%BD%BD%7C%E5%88%B0%E6%9C%9F%7C%E5%89%A9%E4%BD%99
+#>订阅地址：https://raw.githubusercontent.com/XieL1989/Favourite/main/Clash/Naiun
+#>订阅转换：&config=https%3A%2F%2Fraw.githubusercontent.com%2FXieL1989%2FFavourite%2Fmain%2FClash%2FNaiun&filename=Naiun&fdn=true&udp=true&emoji=false&exclude=%E5%AE%98%E6%96%B9%7C%E5%AE%98%E7%BD%91%7C%E4%B8%8B%E8%BD%BD%7C%E5%88%B0%E6%9C%9F%7C%E5%89%A9%E4%BD%99
