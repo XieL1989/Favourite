@@ -41,11 +41,11 @@ custom_proxy_group=漏网之鱼`select`[]国内直连`[]节点选择`[]自动选
 # > 分区策略
 custom_proxy_group=香港HK`url-test`((^(?!.*(IPLC))).*(港|HK|Hong))`http://captive.apple.com/generate_204`300,,50
 custom_proxy_group=台湾TW`url-test`((^(?!.*(IPLC))).*(台|TW|Tai))`http://captive.apple.com/generate_204`300,,50
-custom_proxy_group=美国US`url-test`((^(?!.*(IPLC))).*(美|US|Ameirican))`http://captive.apple.com/generate_204`300,,150
+custom_proxy_group=美国US`url-test`((^(?!.*(IPLC))).*(美|US|States|American))`http://captive.apple.com/generate_204`300,,150
 custom_proxy_group=日本JP`url-test`((^(?!.*(IPLC))).*(日|JP|Jpan))`http://captive.apple.com/generate_204`300,,50
 custom_proxy_group=韩国KR`url-test`((^(?!.*(IPLC))).*(韩|KR|Korea))`http://captive.apple.com/generate_204`300,,50
 custom_proxy_group=英国UK`url-test`((^(?!.*(IPLC))).*(英|UK|Kingdom))`http://captive.apple.com/generate_204`300,,50
-custom_proxy_group=印度IN`url-test`((^(?!.*(IPLC))).*(印|IN|Thailand))`http://captive.apple.com/generate_204`300,,50
+custom_proxy_group=印度IN`url-test`((^(?!.*(IPLC))).*(印|IN|India))`http://captive.apple.com/generate_204`300,,50
 custom_proxy_group=越南VN`url-test`((^(?!.*(IPLC))).*(越|VN|Vietnam))`http://captive.apple.com/generate_204`300,,50
 custom_proxy_group=泰国TH`url-test`((^(?!.*(IPLC))).*(泰|TH|Thailand))`http://captive.apple.com/generate_204`300,,50
 custom_proxy_group=南非ZA`url-test`((^(?!.*(IPLC))).*(非|ZA|Africa))`http://captive.apple.com/generate_204`300,,50
