@@ -11,7 +11,7 @@ custom_proxy_group=国内直连`select`[]DIRECT
 custom_proxy_group=自动选择`url-test`.*`http://captive.apple.com/generate_204`300,,50
 custom_proxy_group=手动切换`select`.*
 custom_proxy_group=高速专线`url-test`(IPLC)`http://captive.apple.com/generate_204`300,,50
-custom_proxy_group=视频解锁`url-test`(原生解锁)`http://captive.apple.com/generate_204`300,,50
+custom_proxy_group=视频解锁`url-test`(解锁|Netflix|Disney)`http://captive.apple.com/generate_204`300,,50
 
 #>详细策略
 custom_proxy_group=Disney`select`[]自动选择`[]手动切换`[]高速专线`[]视频解锁`[]香港HK`[]台湾TW`[]新加坡SG
