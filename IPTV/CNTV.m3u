@@ -37,6 +37,16 @@ https://cntv.lat/tv/live.php?auth=231110&id=cctv15HD
 https://cntv.lat/tv/live.php?auth=231110&id=cctv16HD
 #EXTINF:-1 tvg-id="17" tvg-name="CCTV17" tvg-logo="https://epg.51zmt.top:8000/tb1/CCTV/CCTV17.png" group-title="央视",CCTV农业
 https://cntv.lat/tv/live.php?auth=231110&id=cctv17HD
+#EXTINF:-1 tvg-id="6000" tvg-name="风云足球" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTVfengyunzuqiu.png" group-title="央视",风云足球
+http://cntv.lat/tv/live.php?auth=231110&id=fyzqHD
+#EXTINF:-1 tvg-id="6557" tvg-name="风云音乐" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTVfengyunyinyue.png" group-title="央视",风云音乐
+http://cntv.lat/tv/live.php?auth=231110&id=fyyyHD
+#EXTINF:-1 tvg-id="6558" tvg-name="第一剧场" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTVdiyijuchang.png" group-title="央视",第一剧场
+http://cntv.lat/tv/live.php?auth=231110&id=diyijuchangHD
+#EXTINF:-1 tvg-id="6559" tvg-name="风云剧场" tvg-logo="https://epg.51zmt.top:8000/tb1/CCTV/CCTBfengyun.png" group-title="央视",风云剧场
+https://cntv.lat/tv/live.php?auth=231110&id=fyjcHD
+#EXTINF:-1 tvg-id="6562" tvg-name="怀旧剧场" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/CCTVPAYFEE7.jpg" group-title="央视",怀旧剧场
+http://cntv.lat/tv/live.php?auth=231110&id=hjjcHD
 
 
 #EXTINF:-1 tvg-id="27" tvg-name="湖南卫视" tvg-logo="https://epg.51zmt.top:8000/tb1/ws/hunan.png" group-title="卫视",湖南卫视
