@@ -17,7 +17,7 @@ custom_proxy_group=Netflix`select`[]自动选择`[]手动切换`[]高速专线`[
 custom_proxy_group=YouTube`select`[]自动选择`[]手动切换`[]高速专线`[]香港HK`[]新加坡SG
 custom_proxy_group=Spotify`select`[]国内直连`[]手动切换`[]香港HK
 custom_proxy_group=Bilibili`select`[]国内直连`[]香港HK
-custom_proxy_group=国内视频`select`[]国内直连
+custom_proxy_group=国内影视`select`[]国内直连
 custom_proxy_group=国外影视`select`[]自动选择`[]手动切换`[]高速专线`[]香港HK`[]新加坡SG
 custom_proxy_group=Apple`select`[]国内直连`[]自动选择`[]手动切换
 custom_proxy_group=Bing`select`[]国内直连`[]自动选择`[]手动切换
@@ -35,7 +35,7 @@ custom_proxy_group=漏网之鱼`select`[]国内直连`[]自动选择`[]手动切
 
 # > 分区策略
 custom_proxy_group=香港HK`url-test`(港|HK|Hong)`http://www.gstatic.com/generate_204`300,,50
-custom_proxy_group=美国US`url-test`(美|US|American)`http://www.gstatic.com/generate_204`300,,150
+custom_proxy_group=美国US`url-test`(美|US|American|旧金山)`http://www.gstatic.com/generate_204`300,,150
 custom_proxy_group=日本JP`url-test`(日|JP|Japan)`http://www.gstatic.com/generate_204`300,,50
 custom_proxy_group=新加坡SG`url-test`(新|SG|Singapore)`http://www.gstatic.com/generate_204`300,,50
 
@@ -83,7 +83,7 @@ ruleset=Spotify,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/R
 ruleset=Bilibili,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/BilibiliHMT.list
 ruleset=Bilibili,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bilibili.list
 ruleset=国外影视,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
-ruleset=国内视频,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list
+ruleset=国内影视,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list
 
 # > 最后策略
 ruleset=自动选择,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
