@@ -20,16 +20,16 @@ custom_proxy_group=Spotify`select`[]国内直连`[]手动切换`[]高速专线`[
 custom_proxy_group=Bilibili`select`[]国内直连`[]香港HK`[]台湾TW
 custom_proxy_group=国内影视`select`[]国内直连`[]自动选择`[]手动切换
 custom_proxy_group=国外影视`select`[]自动选择`[]手动切换`[]高速专线`[]香港HK`[]台湾TW`[]新加坡SG
-custom_proxy_group=Apple`select`[]国内直连`[]自动选择`[]手动切换
-custom_proxy_group=Bing`select`[]国内直连`[]自动选择`[]手动切换
-custom_proxy_group=Microsoft`select`[]国内直连`[]自动选择`[]手动切换
-custom_proxy_group=Google`select`[]自动选择`[]手动切换`[]高速专线`[]香港HK`[]美国US
-custom_proxy_group=OpenAI`select`[]自动选择`[]手动切换`[]香港HK`[]美国US
-custom_proxy_group=Telegram`select`[]自动选择`[]手动切换`[]高速专线`[]香港HK`[]新加坡SG
-custom_proxy_group=PayPal`select`[]国内直连`[]香港HK`[]美国US
-custom_proxy_group=Github`select`[]国内直连`[]自动选择`[]香港HK`[]美国US
-custom_proxy_group=Speedtest`select`[]国内直连`[]自动选择`[]香港HK
-custom_proxy_group=游戏平台`select`[]国内直连`[]自动选择`[]手动切换`[]高速专线
+custom_proxy_group=Apple`select`[]国内直连`[]自动选择`[]手动切换`[]其他OT
+custom_proxy_group=Bing`select`[]国内直连`[]自动选择`[]手动切换`[]其他OT
+custom_proxy_group=Microsoft`select`[]国内直连`[]自动选择`[]手动切换`[]其他OT
+custom_proxy_group=Google`select`[]自动选择`[]手动切换`[]高速专线`[]香港HK`[]美国US`[]其他OT
+custom_proxy_group=OpenAI`select`[]自动选择`[]手动切换`[]香港HK`[]美国US`[]其他OT
+custom_proxy_group=Telegram`select`[]自动选择`[]手动切换`[]高速专线`[]香港HK`[]新加坡SG`[]其他OT
+custom_proxy_group=PayPal`select`[]国内直连`[]香港HK`[]美国US`[]其他OT
+custom_proxy_group=Github`select`[]国内直连`[]自动选择`[]香港HK`[]美国US`[]其他OT
+custom_proxy_group=Speedtest`select`[]国内直连`[]自动选择`[]香港HK`[]其他OT
+custom_proxy_group=游戏平台`select`[]国内直连`[]自动选择`[]手动切换`[]高速专线`[]其他OT
 custom_proxy_group=广告拦截`select`[]REJECT`[]国内直连
 custom_proxy_group=应用净化`select`[]REJECT`[]国内直连
 custom_proxy_group=漏网之鱼`select`[]国内直连`[]自动选择`[]手动切换
@@ -40,7 +40,7 @@ custom_proxy_group=台湾TW`url-test`((^(?!.*(○))).*(台|TW|Tai))`http://capti
 custom_proxy_group=美国US`url-test`((^(?!.*(○))).*(美|US|States|American))`http://captive.apple.com/generate_204`300,,150
 custom_proxy_group=日本JP`url-test`((^(?!.*(○))).*(日|JP|Jpan))`http://captive.apple.com/generate_204`300,,50
 custom_proxy_group=新加坡SG`url-test`((^(?!.*(○))).*(狮|SG|Singapore))`http://captive.apple.com/generate_204`300,,50
-custom_proxy_group=其他OT`url-test`((^(?!.*(○|港|台|狮|日|美))).*())`http://captive.apple.com/generate_204`300,,50
+custom_proxy_group=其他OT`select`((^(?!.*(○|港|台|狮|日|美))).*())
 
 
 #[filter_remote]
@@ -67,7 +67,7 @@ ruleset=Microsoft,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash
 ruleset=Google,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list
 ruleset=Google,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Google.list
 ruleset=国内直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
-ruleset=OpenAI,https://raw.githubusercontent.com/XieL1989/Favourite/main/Clash/AI.list
+ruleset=OpenAI,https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/AI.list
 ruleset=Telegram,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
 ruleset=PayPal,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/PayPal/PayPal.list
 ruleset=Github,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Github.list
@@ -96,4 +96,4 @@ ruleset=漏网之鱼,[]FINAL
 
 #[subscribe]
 #>订阅地址：https://raw.githubusercontent.com/XieL1989/Favourite/main/Clash/Bocchi
-#>订阅转换：&config=https%3A%2F%2Fraw.githubusercontent.com%2FXieL1989%2FFavourite%2Fmain%2FClash%2FNaiun&filename=Naiun&fdn=true&udp=true&emoji=false&exclude=%E5%AE%98%E6%96%B9%7C%E5%AE%98%E7%BD%91%7C%E4%B8%8B%E8%BD%BD%7C%E5%88%B0%E6%9C%9F%7C%E5%89%A9%E4%BD%99
+#>订阅转换：&config=https%3A%2F%2Fraw.githubusercontent.com%2FXieL1989%2FFavourite%2Fmain%2FClash%2FBocchi&filename=Bocchi&fdn=true&udp=true&emoji=false
