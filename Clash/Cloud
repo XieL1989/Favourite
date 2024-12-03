@@ -10,7 +10,7 @@ overwrite_original_rules=true
 custom_proxy_group=国内直连`select`[]DIRECT
 custom_proxy_group=自动选择`url-test`.*`http://captive.apple.com/generate_204`300,,50
 custom_proxy_group=手动切换`select`.*
-custom_proxy_group=解锁专线`url-test`(解锁|IEPL)`http://captive.apple.com/generate_204`300,,50
+custom_proxy_group=解锁专线`url-test`(IEPL|IPLC|解锁|专线)`http://captive.apple.com/generate_204`300,,50
 
 #>详细策略
 custom_proxy_group=Disney`select`[]自动选择`[]手动切换`[]解锁专线`[]香港HK`[]台湾TW`[]新加坡SG
@@ -40,7 +40,7 @@ custom_proxy_group=台湾TW`url-test`((^(?!.*(○))).*(台|TW|Tai))`http://capti
 custom_proxy_group=美国US`url-test`((^(?!.*(○))).*(美|US|States|American))`http://captive.apple.com/generate_204`300,,150
 custom_proxy_group=日本JP`url-test`((^(?!.*(○))).*(日|JP|Jpan))`http://captive.apple.com/generate_204`300,,50
 custom_proxy_group=新加坡SG`url-test`((^(?!.*(○))).*(新|SG|Singapore))`http://captive.apple.com/generate_204`300,,50
-custom_proxy_group=其他OT`select`((^(?!.*(解锁|港|台|新|日|美))).*())
+custom_proxy_group=其他OT`select`((^(?!.*(港|台|美|日|新))).*())
 
 
 #[filter_remote]
